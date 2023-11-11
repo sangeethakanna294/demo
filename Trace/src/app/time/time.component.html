@@ -1,0 +1,28 @@
+<div class="form">
+  <div>
+    <input [(ngModel)]="myTime" (ngModelChange)="updateTime($event)" style="
+      background-color: #ffffff;
+      color: #9E9E9E;
+      height: 35px;
+      border-radius: 5px;
+      padding: 10px 5px 10px 15px;
+      box-shadow: 0px 5px 15px -3px rgba(0, 0, 0, 0.08);
+      border: 1px solid #ffff;
+      top: 50%;
+      left: -19px;
+      margin-top: -10px;
+      border-width: 10px;
+      border-style: solid;
+      border-color: transparent transparent transparent #ffff;
+    "/>
+    <button (click)="changeTime()">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="orangered" class="bi bi-arrow-right" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+      </svg>
+    </button>
+  </div>
+  <div class="formatted-time">
+    <span>{{ formattedTime }}</span>
+  </div>
+</div>
+
